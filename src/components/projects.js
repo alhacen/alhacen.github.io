@@ -96,7 +96,7 @@ const Projects = () =>{
                                 {
                                     [...data].map((d, j)=>{
                                     return j%gridCount===i?(
-                                        <div className="w-96 p-6 flex flex-col border relative overflow-hidden">
+                                        <div className="md:w-96 w-80 p-6 flex flex-col border relative overflow-hidden">
                                             <div className="cardContent z-10 flex flex-col gap-3  mix-blend-difference">
                                                 <div className="font-bold ">{d.displayName}</div>
                                                 <div>{d.text}</div>

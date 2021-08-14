@@ -46,7 +46,7 @@ const Experience  = () =>{
                         {
                             experience.map((e,index)=>{
                                 return (
-                                    <div key={e.displayName} onClick={()=> setSelected(index)} className={`border-l-4 mix-blend-difference ${index===selected?'border-red-400 text-red-200':'border-white text-white'} cursor-pointer text-xl  font-bold p-2 pl-5`}>
+                                    <div key={e.displayName} onClick={()=> setSelected(index)} className={`border-l-4 mix-blend-difference ${index===selected?'border-red-400 text-red-200':'border-white text-white'} cursor-pointer md:text-xl  font-bold p-2 pl-5`}>
                                         {e.displayName}
                                     </div>
                                 )
