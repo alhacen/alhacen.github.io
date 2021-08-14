@@ -23,6 +23,7 @@ module.exports = {
         },
       },
       ring: ['hover', 'active'],
+      borderWidth: ['hover', 'focus'],
     },
   },
   variants: {

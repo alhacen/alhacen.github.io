@@ -8,3 +8,17 @@
 #landingPageShapes > *{
     transition-duration: 2s;
 }
+.letterSpacing-2{
+    letter-spacing: 2px;
+}
+.cardWrapper{
+    transition: width .6s;
+
+    width:0px;
+    top:0px;
+    left:0px;
+  }
+  .cardContent:hover + .cardWrapper{
+    /* transform: translate(-300px, -5px); */
+    width:120%
+  }

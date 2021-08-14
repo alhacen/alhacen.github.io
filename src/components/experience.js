@@ -6,7 +6,8 @@ const Experience  = () =>{
             data:
                 {
                     header: 'currently',
-                    text: 'My startup as a millionaire'
+                    subHeader: 'July 2021 - Present',
+                    text: 'Full stack developer',
                 }
             
         },
@@ -15,7 +16,10 @@ const Experience  = () =>{
             data:
                 {
                     header: 'SDE- intern',
-                    text: ''
+                    subHeader: 'May 2021 - July 2021',
+                    text: '',
+                    li:'Developed code to convert design wireframes into website elements. <br>Used ReactJs framework for front-end development. <br>Gained skills such that understanding a very large codebase and writing production-level code and writing test cases. <br>Gained experience in resolving conflicts with colleagues. <br>Created a proof of concept for generic routing of their react app'
+
                 }
             
         },
@@ -24,35 +28,65 @@ const Experience  = () =>{
             data: 
                 {
                     header: 'SDE- intern',
-                    text: ''
+                    subHeader: 'July 2020 - Augush 2020',
+                    li: 'Created UI components and created test cases<br> build their custom postman like app for their API testing.<br> Gained skill in collaborating with other developers and ReactJs and redux'
                 }
             
         }
     ]
     const [selected, setSelected] = useState(0)
     return(
-        <div class="flex bg-black pt-48 pb-48 justify-center">
-            <div class="text-white w-full gap-5 flex flex-col">
-                <div class="text-4xl text-center">
-                    The journey
+        <div className="flex bg-black pt-36 pb-36 justify-center">
+            <div className="text-white w-full gap-5 flex flex-col mix-blend-difference">
+                <div className="text-4xl text-center">
+                    The journey;
                 </div>
-                <div class="flex flex-col md:flex-row justify-center gap-10">
-                    <div class="gap-3 md:flex-col flex-row justify-center flex p-8 border-r">
+                <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10">
+                    <div className="gap-3 md:flex-col flex-row justify-center md:justify-start flex p-8 border-r">
                         {
                             experience.map((e,index)=>{
                                 return (
-                                    <div key={e.displayName} onClick={()=> setSelected(index)} class={`border-l-4 ${index===selected?'border-red-400 text-red-200':'border-white text-white'} cursor-pointer text-xl  font-bold p-2 pl-5`}>
+                                    <div key={e.displayName} onClick={()=> setSelected(index)} className={`border-l-4 mix-blend-difference ${index===selected?'border-red-400 text-red-200':'border-white text-white'} cursor-pointer text-xl  font-bold p-2 pl-5`}>
                                         {e.displayName}
                                     </div>
                                 )
                             })
                         }
                     </div>
-                    <div class="flex flex-col gap-5 w-full md:w-96 items-center md:items-start">
-                        <div class="text-xl font-bold" style={{wordSpacing:'6px'}}>
-                            {experience[selected].data.header} @ <span class="text-red-200" style={{letterSpacing:'2px'}}>{experience[selected].displayName}</span>
+                    <div className="flex flex-col w-96  items-center md:items-start">
+                        <div className="text-xl font-bold" style={{wordSpacing:'6px'}}>
+                            {experience[selected].data.header} @ <span className="text-red-200 mix-blend-difference letterSpacing-2">{experience[selected].displayName}</span>
                         </div>
-                        <div style={{letterSpacing:'2px'}}>
+                        {
+                            experience[selected].data.subHeader?
+                            <div className="font-thin letterSpacing-2">
+                                {experience[selected].data.subHeader}
+                            </div>:null
+
+                        }
+                        {
+                            experience[selected].data.li?
+                                <div className="pt-3 flex flex-col gap-2">
+                                    {
+                                        experience[selected].data.li?.split("<br>").map(x=>{
+                                            return(
+                                                <div className="flex">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff9e9e"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                                                    </div>
+                                                    <div>
+                                                        {x}
+                                                    </div>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                            :null
+
+                        }
+                        
+                        <div className="pt-3 flex flex-col gap-2">
                             {experience[selected].data.text}
                         </div>
                     </div>
