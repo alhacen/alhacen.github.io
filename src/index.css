@@ -22,3 +22,24 @@
     /* transform: translate(-300px, -5px); */
     width:120%
   }
+.animate-top{position:relative;animation:animatetop 0.1s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  *::-webkit-scrollbar-track {
+    background: #101010;
+  }
+   
+  /* Handle */
+  *::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+  }
+  
+  /* Handle on hover */
+  *::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -7,7 +7,7 @@ const LandingPage = () =>{
         const animate = () => {
             let totalHeight = document.body.clientHeight
             let scrolled = window.pageYOffset
-            setOffset(1-((totalHeight-scrolled)/totalHeight));            
+            setOffset(1-((totalHeight-scrolled)/totalHeight));    
             if(!transitionThrottel){
                 [...svgRef.current.children].map(elm=>{
                     transitionThrottel=true

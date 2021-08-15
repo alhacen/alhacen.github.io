@@ -36,13 +36,13 @@ const Experience  = () =>{
     ]
     const [selected, setSelected] = useState(0)
     return(
-        <div className="flex bg-black pt-36 pb-36 justify-center">
+        <div className="flex bg-black pt-36 pb-36 justify-center overflow-hidden ">
             <div className="text-white w-full gap-5 flex flex-col mix-blend-difference">
                 <div className="text-4xl text-center">
                     The journey;
                 </div>
-                <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10">
-                    <div className="gap-3 md:flex-col flex-row justify-center md:justify-start flex p-8 border-r">
+                <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-10 flex-1"  style={{transition:'all 0.3s ease-out'}}>
+                    <div className="gap-3 md:overflow-x-hidden overflow-x-scroll w-full md:w-auto md:flex-col flex-row justify-center md:justify-start flex p-8 border-r">
                         {
                             experience.map((e,index)=>{
                                 return (
@@ -66,11 +66,11 @@ const Experience  = () =>{
                         }
                         {
                             experience[selected].data.li?
-                                <div className="pt-3 flex flex-col gap-2">
+                                <div className="p-8 md:p-0 pt-3 flex flex-col gap-2 ">
                                     {
                                         experience[selected].data.li?.split("<br>").map(x=>{
                                             return(
-                                                <div className="flex">
+                                                <div key={x} className="flex">
                                                     <div>
                                                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff9e9e"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
                                                     </div>

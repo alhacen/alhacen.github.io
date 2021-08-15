@@ -6,7 +6,7 @@ import Projects from './components/projects';
 
 const Main = () =>{
 	return(
-		<div className="bg-white h-screen overflow-x-hidden">
+		<div className="bg-white h-screen">
 			<LandingPage />
 			<Experience />
 			<Projects />

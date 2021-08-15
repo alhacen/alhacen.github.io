@@ -85,25 +85,25 @@ const Projects = () =>{
         gridCount = 1
     return(
         <div className=" bg-black  pb-36 justify-center gap-3 text-white">
-            <div className="w-full text-center text-4xl p-4">
+            <div className="w-full text-center text-4xl pb-10 p-4">
                 Things I’ve Created
             </div>
             <div className="flex flex-wrap justify-center gap-2">
                 {
                     Array(gridCount).fill(0).map((_,i)=>{
                         return (
-                            <div className="flex flex-col gap-2">
+                            <div key={i.toString()} className="flex flex-col gap-2">
                                 {
                                     [...data].map((d, j)=>{
                                     return j%gridCount===i?(
-                                        <div className="md:w-96 w-80 p-6 flex flex-col border relative overflow-hidden">
+                                        <div key={d.displayName} className="md:w-96 w-80 p-6 flex flex-col border relative overflow-hidden">
                                             <div className="cardContent z-10 flex flex-col gap-3  mix-blend-difference">
                                                 <div className="font-bold ">{d.displayName}</div>
                                                 <div>{d.text}</div>
                                                 <div className="flex justify-between">
                                                     {
                                                         d.link.map((link, index)=>{
-                                                            return <a href={link.href} target="_blank"><div className={` pl-4 pr-4 pt-1 pb-1 ${index === 0? 'text-red-400 hover:bg-white': 'text-white hover:bg-gray-800'}`}>{link.name}</div></a>
+                                                            return <a key={link.name} href={link.href} target="_blank"><div className={` pl-4 pr-4 pt-1 pb-1 ${index === 0? 'text-red-400 hover:bg-white': 'text-white hover:bg-gray-800'}`}>{link.name}</div></a>
                                                         })
                                                     }
                                                 </div>
