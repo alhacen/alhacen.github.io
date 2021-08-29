@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 const Experience  = () =>{
+    const experienceColRef = useRef(null)
     const experience = [
         {
             displayName:"Afnamd",
@@ -45,15 +46,37 @@ const Experience  = () =>{
                     <div className="gap-3 md:overflow-x-hidden overflow-x-scroll w-full md:w-auto md:flex-col flex-row justify-center md:justify-start flex p-8 border-r">
                         {
                             experience.map((e,index)=>{
+                                let dir1, dir2
+                                if(window.aniamteDir === undefined)
+                                    window.aniamteDir = index
+                                if(window.aniamteDir > index){
+                                    dir1='md:animate__slideInDown' 
+                                    dir2='animate__slideInLeft'
+                                }
+                                else{
+                                    dir1='md:animate__slideInUp'
+                                    dir2= 'animate__slideInRight'
+                                }
                                 return (
-                                    <div key={e.displayName} onClick={()=> setSelected(index)} className={`border-l-4 mix-blend-difference ${index===selected?'border-red-400 text-red-200':'border-white text-white'} cursor-pointer md:text-xl  font-bold p-2 pl-5`}>
+                                    <div key={e.displayName} 
+                                        onClick={()=> {
+                                            window.aniamteDir = index;
+                                            // experienceColRef.current.classList.add(dir==='animate-top'?'slideOutDown':'slideOutUp');
+                                            experienceColRef.current.classList.add(dir1);setSelected(index);
+                                            experienceColRef.current.classList.add(dir2);setSelected(index);
+
+                                            setTimeout(_=>{},200)
+
+                                            setTimeout(_=>{experienceColRef.current.classList.remove(dir1);experienceColRef.current.classList.remove(dir2)},300)
+                                        }} 
+                                        className={`border-l-4 mix-blend-difference ${index===selected?'border-red-400 text-red-200':'border-white text-white'} cursor-pointer md:text-xl  font-bold p-2 pl-5`}>
                                         {e.displayName}
                                     </div>
                                 )
                             })
                         }
                     </div>
-                    <div className="flex flex-col w-96  items-center md:items-start">
+                    <div ref={experienceColRef} className={` flex flex-col w-96  items-center md:items-start `}  style={{animationDuration: '150ms'}}>
                         <div className="text-xl font-bold" style={{wordSpacing:'6px'}}>
                             {experience[selected].data.header} @ <span className="text-red-200 mix-blend-difference letterSpacing-2">{experience[selected].displayName}</span>
                         </div>
@@ -66,7 +89,7 @@ const Experience  = () =>{
                         }
                         {
                             experience[selected].data.li?
-                                <div className="p-8 md:p-0 pt-3 flex flex-col gap-2 ">
+                                <div className="p-8 md:p-0 pt-3 flex flex-col gap-2">
                                     {
                                         experience[selected].data.li?.split("<br>").map(x=>{
                                             return(

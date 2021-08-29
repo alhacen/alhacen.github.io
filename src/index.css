@@ -22,7 +22,19 @@
     /* transform: translate(-300px, -5px); */
     width:120%
   }
-.animate-top{position:relative;animation:animatetop 0.1s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+  @-webkit-keyframes slideInLeft{0%{-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInLeft{0%{-webkit-transform:translate3d(-50%,0,0);transform:translate3d(-50%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}
+  @-webkit-keyframes slideInRight{0%{-webkit-transform:translate3d(50%,0,0);transform:translate3d(50%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInRight{0%{-webkit-transform:translate3d(50%,0,0);transform:translate3d(50%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}
+  @-webkit-keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}
+  @-webkit-keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}
+
+  @layer utilities {
+    @variants responsive {
+      .animate__slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}
+      .animate__slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}
+      .animate__slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}
+      .animate__slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft}
+    }
+  }
 
   *::-webkit-scrollbar {
     width: 5px;
