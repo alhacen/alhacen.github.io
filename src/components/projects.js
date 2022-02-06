@@ -86,7 +86,7 @@ const Projects = () =>{
     return(
         <div className=" bg-black  pb-36 justify-center gap-3 text-white">
             <div className="w-full text-center text-4xl pb-10 p-4">
-                Things I’ve Created
+                Things I’ve Created;
             </div>
             <div className="flex flex-wrap justify-center gap-2">
                 {

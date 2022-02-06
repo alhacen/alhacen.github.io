@@ -3,12 +3,24 @@ const Experience  = () =>{
     const experienceColRef = useRef(null)
     const experience = [
         {
-            displayName:"Afnamd",
+            displayName:"Polygon",
             data:
                 {
                     header: 'currently',
-                    subHeader: 'July 2021 - Present',
-                    text: 'Full stack developer',
+                    subHeader: 'January 2022 - Present',
+                    li:'Created new componets using Vuejs <br> Worked with MetaMask wallet, various payment bridges and decentralized technology <br> fixed various bugs'
+                    // text: 'working as a full-stack and  UI UX desingner. mainly working on websocket, payment gateway and prototyping Ui components on figma',
+                }
+            
+        },
+        {
+            displayName:"Afnamd",
+            data:
+                {
+                    header: 'FullStack Developer',
+                    subHeader: 'July 2021 - January 2022',
+                    li:'Lead development and design team. <br>created a better routing architectural pattern for expressjs. <br>collaborated with people of different disciplines. <br>Gained experience in resolving conflicts with colleagues. <br>Developed Products and provided tech services to several clients. '
+                    // text: 'working as a full-stack and  UI UX desingner. mainly working on websocket, payment gateway and prototyping Ui components on figma',
                 }
             
         },
@@ -87,27 +99,29 @@ const Experience  = () =>{
                             </div>:null
 
                         }
-                        {
-                            experience[selected].data.li?
-                                <div className="p-8 md:p-0 pt-3 flex flex-col gap-2">
-                                    {
-                                        experience[selected].data.li?.split("<br>").map(x=>{
-                                            return(
-                                                <div key={x} className="flex">
-                                                    <div>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff9e9e"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                        <div className='pt-3'>
+                            {
+                                experience[selected].data.li?
+                                    <div className="p-8 md:p-0 pt-3 flex flex-col gap-2">
+                                        {
+                                            experience[selected].data.li?.split("<br>").map(x=>{
+                                                return(
+                                                    <div key={x} className="flex">
+                                                        <div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ff9e9e"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                                                        </div>
+                                                        <div>
+                                                            {x}
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        {x}
-                                                    </div>
-                                                </div>
-                                            )
-                                        })
-                                    }
-                                </div>
-                            :null
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                :null
 
-                        }
+                            }
+                        </div>
                         
                         <div className="pt-3 flex flex-col gap-2">
                             {experience[selected].data.text}
