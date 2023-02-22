@@ -4,7 +4,7 @@ const Footer = () =>{
         <div>
             <div className="bg-white flex justify-between">
                 <div className="ml-4 mb-4 relative">
-                    <a href="https://github.com/alhaqhassan/alhaqhassan.github.io" className="absolute bottom-0">
+                    <a href="https://github.com/alhacen/alhacen.github.io" className="absolute bottom-0">
                         <div className=" flex items-center gap-4  p-2 border-2 border-black">
                             <svg width="37" viewBox="0 0 167 135" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M167 107.5C167 122.688 154.688 135 139.5 135C124.312 135 112 122.688 112 107.5C112 92.3122 124.312 80 139.5 80C154.688 80 167 92.3122 167 107.5ZM125.564 107.5C125.564 115.197 131.803 121.436 139.5 121.436C147.197 121.436 153.436 115.197 153.436 107.5C153.436 99.8035 147.197 93.5642 139.5 93.5642C131.803 93.5642 125.564 99.8035 125.564 107.5Z" fill="black" />
@@ -29,7 +29,7 @@ const Footer = () =>{
                         </div>
                         <div>gwz73gj19@mozmail.com</div>
                     </div>
-                    <a href="https://github.com/alhaqhassan">
+                    <a href="https://github.com/alhacen">
                         <div className="flex gap-4 flex-row-reverse">
                             <div>
                             <svg
@@ -41,10 +41,10 @@ const Footer = () =>{
                                 <path d="M15.5 22.7h-.1l-.1-.1V22v-2.5c0-.7-.1-1.3-.4-1.8 2.3-.4 4.8-1.6 4.8-6.1 0-1.2-.4-2.3-1.1-3.2.2-.6.3-1.7-.2-3.1l-.3-.3s-.2-.1-.4-.1c-.6 0-1.5.2-3 1.2-.8-.1-1.7-.3-2.7-.3-1 0-1.9.1-2.8.3C7.8 5.2 6.8 5 6.2 5c-.2 0-.3.1-.4.1-.1 0-.3.2-.3.3-.5 1.4-.4 2.5-.2 3.1-.7.9-1.1 2-1.1 3.2 0 4.4 2.6 5.6 4.8 6.1-.1.2-.2.5-.3.8-.2.1-.5.2-.9.2s-.8-.1-1.1-.4l-.1-.1c-.1-.1-.1-.2-.2-.2l-.1-.1-.1-.1c0-.1-.8-1.3-2.2-1.4-.5 0-.9.2-1 .5-.2.5.4.9.7 1.1 0 0 .6.3 1 1.4.2.7 1.1 2 3.2 2h.7v1.4l-.1.1s-.1 0 0 0C4 21.2 1 17 1 12.3c0-6.1 4.9-11 11-11s11 4.9 11 11c0 4.7-3 8.9-7.5 10.4z" />
                                 </svg>
                             </div>
-                            <div>alhaqhassan</div>
+                            <div>alhacen</div>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/alhaqhassan">
+                    <a href="https://www.linkedin.com/in/alhacen">
                         <div className="flex gap-4 flex-row-reverse">
                             <div>
                             <svg
@@ -55,7 +55,7 @@ const Footer = () =>{
                                 <path d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z" />
                             </svg>
                             </div>
-                            <div>alhaqhassan</div>
+                            <div>alhacen</div>
                         </div>
                     </a>
                 </div>

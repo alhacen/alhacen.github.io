@@ -8,7 +8,7 @@ const Projects = () =>{
             link:[
                 {
                     name: 'github',
-                    href: 'https://github.com/alhaqhassan/izzi.js'
+                    href: 'https://github.com/alhacen/izzi.js'
                 }                
             ],
         },
@@ -18,11 +18,11 @@ const Projects = () =>{
             link:[
                 {
                     name: 'github',
-                    href: 'https://github.com/alhaqhassan/react_resume_builder'
+                    href: 'https://github.com/alhacen/react_resume_builder'
                 },
                 {
                     name: 'live',
-                    href: 'https://alhaqhassan.github.io/react_resume_builder/'
+                    href: 'https://alhacen.github.io/react_resume_builder/'
                 }
             ],
         },
@@ -46,11 +46,11 @@ const Projects = () =>{
             link:[
                 {
                     name: 'github',
-                    href: 'https://github.com/alhaqhassan/upcjmi-jekyll'
+                    href: 'https://github.com/alhacen/upcjmi-jekyll'
                 },
                 {
                     name: 'live',
-                    href: 'https://alhaqhassan.github.io/upcjmi-jekyll/'
+                    href: 'https://alhacen.github.io/upcjmi-jekyll/'
                 }
             ],
         },
@@ -60,7 +60,7 @@ const Projects = () =>{
             link:[
                 {
                     name: 'github',
-                    href: 'https://github.com/alhaqhassan/auto-skip-youtube-ads.js'
+                    href: 'https://github.com/alhacen/auto-skip-youtube-ads.js'
                 }
             ],
         },
@@ -70,7 +70,7 @@ const Projects = () =>{
             link:[
                 {
                     name: 'github',
-                    href: 'https://github.com/alhaqhassan/irouter.js'
+                    href: 'https://github.com/alhacen/irouter.js'
                 }
             ],
         },

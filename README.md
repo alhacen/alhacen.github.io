@@ -1,16 +1,16 @@
 <h2 align="center">
   Portfolio Website<br/>
-  <a href="https://alhaqhassan.github.io/" target="_blank">alhaqhassan.github.io</a>
+  <a href="https://alhacen.github.io/" target="_blank">alhacen.github.io</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="https://raw.githubusercontent.com/alhaqhassan/my_gits/5a5f12826d40a34fe9e0ac4b3e51a4d1033eea64/alhaqhassan.github.ioSnip.svg" style="width:500px"/>
+  <img alt="Demo" src="https://raw.githubusercontent.com/alhacen/my_gits/adf0d9e136d96d9eafed55208ad79612cc31fe8e/alhacen.github.ioSnip.svg" style="width:500px"/>
 </div>
 
 
 
 ## Built With
 
-My personal portfolio <a href="https://alhaqhassan.github.io/" target="_blank">alhaqhassan.github.io</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://alhacen.github.io/" target="_blank">alhacen.github.io</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 Technologies Used.
 
